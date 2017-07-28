@@ -1,0 +1,679 @@
+/*default-parameters*/
+
+* {
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+#header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+
+.navigation-container {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.navigation-menu {
+    font-family: sans-serif;
+    margin-left: 140px;
+    font-size: 16px;
+}
+
+.navigation-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-menu ul .main-menu {
+    display: inline-block;
+    padding-left: 15px;
+    margin: 40px 0;
+}
+
+.navigation-menu ul .main-menu a {
+    color: white;
+}
+
+.navigation-menu ul .main-menu a:hover:after {
+    width: 100%;
+}
+
+.navigation-menu ul .main-menu a:after {
+    content: '';
+    display: block;
+    transition: width 0.25s linear;
+    background-color: #ddb321;
+    vertical-align: baseline;
+    height: 2px;
+    width: 0%;
+    margin: 5px auto;
+}
+
+#brand-logo {
+    position: absolute;
+    margin: 20px 60px;
+    background-color: transparent;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+}
+
+.side-menu {
+    position: absolute;
+    z-index: 300;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: 310px;
+    width: 18px;
+}
+
+.side-menu .settings {
+    visibility: visible;
+    display: flex;
+}
+
+.side-menu .settings li {
+    padding-left: 25px;
+    cursor: pointer;
+    margin: 40px 0;
+    font-size: 19px;
+}
+
+.side-menu i.fa {
+    display: inline-block;
+    width: 23px;
+}
+
+.side-menu ul li:hover {
+    opacity: 0.7;
+    font-size: 20.5px;
+}
+
+
+/*hovering properties of navigation bar*/
+
+.sub-menu {
+    visibility: hidden;
+    z-index: 300;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    display: block;
+    top: 100%;
+    color: white;
+    background-color: #2c2828;
+    transition: 0.50s height;
+}
+
+ul .main-menu:hover .sub-menu {
+    visibility: visible;
+    z-index: 300;
+    height: 280px;
+}
+
+.sub-menu a {
+    display: block;
+    text-transform: uppercase;
+    padding: 90px 10px;
+}
+
+
+/*navigation hovering properties end*/
+
+.we-are-not-cars {
+    background-image: url(images/slider-news-brand.jpg);
+    overflow: visible;
+    transform-origin: center center;
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+.caption p {
+    color: white;
+    position: absolute;
+    font-family: sans-serif;
+    border-color: transparent;
+    left: 80px;
+    background-color: transparent;
+    text-transform: uppercase;
+    top: 200px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 45px;
+}
+
+.discover p {
+    text-transform: uppercase;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding: 18px;
+    width: 340px;
+    height: 45px;
+    position: absolute;
+    margin-top: 13px;
+    background-color: white;
+    top: 260px;
+    left: 800px;
+}
+
+#lamborgini-world {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#lamborgini-world:after {
+    content: '';
+    background-color: black;
+    width: 150px;
+    height: 5px;
+    left: 45%;
+    top: 47px;
+    position: absolute;
+}
+
+.owl-carousel {
+    margin: 90px 0;
+    overflow: hidden;
+}
+
+.slider-paragraph {
+    text-align: center;
+    margin-top: 2px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.events {
+    margin-left: 80px;
+    overflow: hidden;
+    margin-right: 90px;
+    position: relative;
+}
+
+.event-line {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #ddb321;
+    font-size: 17px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.45s color;
+    position: relative;
+}
+
+.event-line:after {
+    content: '\f054';
+    font-family: FontAwesome;
+    position: absolute;
+    left: 470px;
+}
+
+.event-line:hover {
+    color: black;
+}
+
+.car {
+    position: relative;
+    margin-top: 10px;
+}
+
+.car_image {
+    width: 50%;
+    height: 270px;
+    filter: brightness(40%);
+    position: absolute;
+}
+
+.car_image:hover {
+    filter: brightness(60%);
+}
+
+.dates {
+    color: #ddb321;
+    font-family: sans-serif;
+    font-size: 18px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+}
+
+.super-trofio {
+    position: absolute;
+    width: 15%;
+    top: 90px;
+    left: 150px;
+    height: 80px;
+    transform: rotate(-10deg);
+}
+
+.spa {
+    position: relative;
+    background-color: #efefea;
+    float: right;
+    width: 55%;
+    height: 270px;
+}
+
+.franco {
+    color: #ddb321;
+    font-family: sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.franco:hover {
+    color: black;
+}
+
+.trofeo {
+    color: black;
+    font-family: sans-serif;
+    top: 40px;
+    left: 50px;
+    position: absolute;
+    font-size: 22px;
+}
+
+.gt {
+    color: black;
+    font-family: sans-serif;
+    position: absolute;
+    top: 80px;
+    font-weight: 100;
+    left: 50px;
+}
+
+.all-the-events {
+    position: absolute;
+    top: 220px;
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+    text-transform: uppercase;
+    left: 40px;
+}
+
+.all-the-events:after {
+    content: '\f073';
+    font-family: FontAwesome;
+    position: absolute;
+    left: 190px;
+}
+
+.all-the-events:hover {
+    color: #ddb321;
+}
+
+.discover-more {
+    position: absolute;
+    top: 220px;
+    font-family: sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 100;
+    left: 400px;
+}
+
+.discover-more:after {
+    content: '\f1ea';
+    font-family: FontAwesome;
+    position: absolute;
+    left: 190px;
+}
+
+.discover-more:hover {
+    color: #ddb321;
+}
+
+
+/*owl carousel*/
+
+.event-image {
+    width: 30px;
+    height: 100px;
+    filter: brightness(70%);
+    position: relative;
+    transition: 0.50s brightness;
+}
+
+.event-image:hover {
+    filter: brightness(90%);
+}
+
+.information-carousel {
+    margin: 0;
+}
+
+.slider-dates {
+    color: #ddb321;
+    font-family: sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    z-index: 7;
+    font-size: 18px;
+}
+
+.slider-caption {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    z-index: 7;
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    left: 40px;
+}
+
+.follow-us-on {
+    background-image: url(images/bg-social-stripe.jpg);
+    background-position: center bottom;
+    background-color: #eee;
+    position: relative;
+    margin-top: 90px;
+    width: 100%;
+    background-size: cover;
+    height: 190px;
+    overflow: hidden;
+}
+
+.follow-us-on-header {
+    font-family: sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.follow-us-on-icons {
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+.follow-us-on-icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.follow-us-on-icons ul li {
+    margin-left: 50px;
+    flex-basis: 6px;
+    margin-top: 70px;
+    list-style: none;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.side-content {
+    margin: 80px;
+    position: relative;
+    text-align: left;
+    width: 55%;
+}
+
+.personam strong {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.personam {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.side-content-paragraph {
+    font-size: 15px;
+    margin: 55px 0;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.button {
+    color: white;
+    background-color: #ddb321;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    font-size: 13px;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: text-indent 0.25s;
+    cursor: pointer;
+}
+
+.button:hover:after {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    color: white;
+    position: absolute;
+    background-color: #ddb321;
+    font-size: 16px;
+    right: 6px;
+    top: 12px;
+    font-weight: 100;
+}
+
+.button:hover {
+    text-indent: -25px;
+}
+
+.section {
+    margin-top: 180px;
+    margin-left: 500px;
+}
+
+.squadra-course {
+    width: auto;
+    height: auto;
+}
+
+.squadra-corse-paragraph {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-right: 70px;
+    font-family: sans-serif;
+    font-weight: 200;
+    display: block;
+    font-size: 15px;
+}
+
+.continue-on-squadra {
+    border: none;
+    background-color: #ddb321;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    width: 280px;
+    height: 40px;
+}
+
+.background-cover {
+    margin-top: 35px;
+}
+
+.back {
+    width: 100%;
+    height: 300px;
+}
+
+.dealer {
+    background-image: url(images/background-network.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-position: 30% 0;
+}
+
+.find {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-top: -3px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.map_marker {
+    color: white;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.btn-find {
+    border: none;
+    background-color: #ddb321;
+    color: white;
+    text-align: center;
+    width: 70px;
+    text-transform: uppercase;
+    display: block;
+    margin: 40px auto 30px auto;
+    height: 30px;
+    cursor: pointer;
+}
+
+.lambo {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+footer {
+    background-image: url(images/bg-footer.jpg);
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.footer-header {
+    margin-left: 120px;
+    padding-top: 20px;
+}
+
+.footer-header li {
+    display: inline-block;
+    color: white;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.footer-header li:hover {
+    opacity: 0.6;
+}
+
+.footer-boxes {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.underlined a {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    opacity: 1;
+}
+
+.underlined:after {
+    content: '';
+    background-color: white;
+    width: 190px;
+    height: 2px;
+    top: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.models {
+    color: white;
+    font-family: sans-serif;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.models ul li {
+    line-height: 26px;
+    opacity: 0.5;
+}
+
+.models ul li:hover {
+    opacity: 1;
+}
+
+.networks {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+#followUs {
+    font-size: 18px;
+}
+
+.networks ul li {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+.networks ul li:hover {
+    opacity: 1;
+}
+
+.copyright {
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 15px;
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.copyright span:hover {
+    border-bottom: 1px solid white;
+}
